@@ -1,2 +1,0 @@
-# Hearts
-Play Hearts online
