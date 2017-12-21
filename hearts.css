@@ -1,0 +1,194 @@
+#body {
+  background-color: #b20000;
+}
+
+#game_container{
+  margin: auto;
+  border: 20px solid #ffcccc;
+  width: 800px;
+  height: 650px;
+  background-color: white;
+}
+
+#game {
+  width: 600px;
+  height: 650px;
+}
+
+/*************** Top ****************/
+#title {
+  height: 50px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-bottom: 20px solid #ffcccc;
+}
+
+#title h1 {
+ color: #b20000;
+}
+
+#title img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+/*************** Center *************/
+#center{
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+}
+
+#center .panel{
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 34%
+  justify-content: space-around;
+  -webkit-justify-content: space-around; /* Safari 6.1+ */
+}
+
+#card_table {
+  width: 200px;
+  height: 160px;
+  border: 1px solid #ffcccc;
+}
+
+#n, #e, #w, #s {
+  position: absolute;
+}
+
+#n {
+  margin: 0 0 0 65px;
+  background-color: #f5f5d6;
+}
+#e{
+  margin: 30px 0 0 125px;
+  background-color: #d6eaae;
+}
+#w {
+  margin: 30px 60px 0 5px;
+  background-color: #f5d6d6;
+}
+#s {
+  margin: 60px 0 0 65px;
+  background-color: #d6e4f5;
+}
+
+#card_table .card {
+  margin-right: -20px;
+}
+
+#north.card {
+  border: 3px solid red;
+  margin: 0 -15px 0 0;
+}
+
+#main {
+  background-color: #ffcdcd;
+  width: 80px;
+  height: 30px;
+  margin-left: 55px;
+}
+
+/*************** Side Pane *************/
+#side_pane{
+  height: 90%;
+  width: 160px;
+  padding: 0 10px 0 10px;
+  border-left: 20px solid #ffcccc;
+  float: right;
+  margin-top: -660px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.score_board {
+  height: 106px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.score {
+  border: 1px solid red;
+}
+
+#log {
+  background-color:#ffcccc;
+  border: 1px solid black;
+  margin-top: 2px;
+  padding: 0;
+  height: 290px;
+  overflow-y: scroll;
+}
+
+#log p {
+  border: 1px solid black;
+  margin: 0;
+}
+
+/*************** Hands *************/
+.hand {
+  position:relative;
+}
+
+#south .hand, #north .hand {
+  margin-left: 60px;
+}
+
+.card, .ai_card {
+  display: inline-block;
+}
+
+#east .ai_card, #west .ai_card {
+  margin-right: -60px;
+}
+
+#south .card, #north .ai_card {
+  margin-right: -36px;
+}
+
+#south .card img:hover{
+  margin-bottom: 7px;
+}
+
+
+/*************** Players *************/
+.player {
+  width: 33%;
+  height: 153px;
+  padding:10px;
+  margin: 10px;
+}
+
+.player p {
+  margin-left, margin-right: 50%;
+}
+
+.player#north {
+  background-color: #f5f5d6;
+  width: 93%;
+  margin: 10px;
+}
+
+.player#east {
+  background-color: #d6eaae;
+  float: right;
+}
+
+.player#west {
+  background-color: #f5d6d6;
+  float: left;
+}
+
+.player#south {
+  background-color: #d6e4f5;
+  width: 93%;
+  margin: 10px;
+}
+
